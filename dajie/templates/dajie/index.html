@@ -1,0 +1,9 @@
+{% if highest_salary_list %}
+    <ul>
+    {% for direction in highest_salary_list %}
+        <li><a href="{% url 'dajie:detail' direction.id %}">{{ direction.direction_title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No messages are available.</p>
+{% endif %}
