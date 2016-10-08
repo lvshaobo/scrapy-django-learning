@@ -7,8 +7,9 @@ from .models import Direction
 
 
 class DetailView(generic.DetailView):
-    model = Direction
+    model = Direction # queryset = Direction.objects.all()
     template_name = 'dajie/detail.html'
+    context_object_name = 'direction'
 
 
 class IndexView(generic.ListView):
@@ -17,5 +18,5 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         """Return the five salary-highest job_title."""
-        return Direction.objects.order_by('-salary')[:5]
+        return Direction.objects.order_by('salary')[:5]
 
