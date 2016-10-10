@@ -1,4 +1,6 @@
-<title>Direction Index</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'dajie/index.css' %}" />
+<title>Dajie Index</title>
 <h1>Direction Index</h1>
 
 {% if highest_salary_list %}
@@ -11,3 +13,6 @@
 {% else %}
     <p>No messages are available.</p>
 {% endif %}
+
+<img class="figure" src="{% static 'dajie/images/figure_600.png' %}" alt="help" />
+

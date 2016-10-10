@@ -1,0 +1,23 @@
+h1 {color: blue;
+}
+
+ul {color: black;
+}
+
+li a {color: blue;
+      font-family: "sans serif";
+}
+
+img {width: 600px;
+     height: 400px;
+     position:absolute;
+     left:100px;
+}
+
+body {background-color: white;
+    /*background-image: url("images/figure_600.png");
+      background-size: 880px 600px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    */  
+}
